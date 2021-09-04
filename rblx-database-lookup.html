@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Welcome to my space on the internet!">
+    <meta name="keywords" content="agentisnotreal, agentdoesnotexist, Agent113YT, Minecritters113">
+    <meta name="viewport" content="width=1030px, initial-scale=0.4">
+    <meta content="#021736" data-react-helmet="true" property="theme-color">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/svg" href="./src/svg/agentisnotreal.svg">
+    <script src="./js/getDb.js"></script>
+    <script src="./js/getGHCommit.js"></script>
+    <title>Discord-Roblox DB Lookup</title>
+</head>
+
+<body onload="setDisplayedCommit('commit')">
+
+    <!-- Dummy frame -->
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+    <h1>Rover-Bloxlink Database Lookup</h1>
+    <p>Enter a Discord ID below to scan between both Discord-Roblox verification databases for linked account information</p>
+    <!-- Discord ID Input -->
+    <form action="./rblx-database-lookup.html" target="dummyframe">
+        <label for="discordId">Discord ID</label>
+        <input class="textinput" type="text" id="discordId" name="discordId" value="">
+        <input class="submit" type="submit" value="Lookup" onclick="setData('discordId');">
+    </form>
+    <br>
+
+    <div class="dbData">
+        <div style="display: inline-block;">
+            <!-- RoVer -->
+            <h1>RoVer</h1>
+            <h3>Username</h3>
+            <p id="roverUsername">Unknown</p>
+            <h3>User ID</h3>
+            <p id="roverId">Unknown</p>
+
+            <!-- Bloxlink -->
+            <h1>Bloxlink</h1>
+            <h3>User ID</h3>
+            <p id="bloxlinkId">Unknown</p>
+        </div>
+        <div style="display: inline-block; width:250px; vertical-align: top; padding: 0 60px;">
+            <img id="avatar" class="icon" src="http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&id=0" alt="Avatar" style="height: 250px; width: 250px;">
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div>
+        <img src="./src/svg/github.svg" alt="Github" style="height: 50px; width: 50px; display: inline-block; vertical-align: middle;">
+        <a id="commit" style="display: inline-block; font-size: 30px; margin-left: 10px; vertical-align: middle; color: #ffffff; text-decoration: none;">git-UNKNOWN</a>
+    </div>
+    <a href="https://agentdoesnotexist.xyz">agentdoesnotexist.xyz</a>
+</footer>

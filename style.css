@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
+body {
+    background-color: #10131a;
+    color: aliceblue;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+footer {
+    border-top: 2px solid #4abea1;
+    background-color: #34363c;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    padding: 15px 0;
+}
+
+.dbData {
+    background-color: #34363c;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: auto 35%;
+    height: 500px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 0 0 2px #4abea1;
+}
+
+.textinput {
+    background-color: #34363c;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #4abea1;
+    margin: 0 15px;
+    border: 0px;
+}
+
+.submit {
+    background-color: #7bb263;
+    border-radius: 20px;
+    border: 0;
+    color: #ffffff;
+    width: 75px;
+}
+
+a {
+    color: #4abea1;
+}
